@@ -124,3 +124,20 @@ def main_function():
   turnCounter = 0
   choose = input('\n Do you wish to proceed? ... \n Or are you afrid the computer will best you! : ').lower()
 
+  if (choose == 'yes' or choose == 'yea'):
+    while (leaveLoop == False):
+      if (checkWhoWon(field) == True): 
+        displayField()        
+        break
+      elif (turnCounter == 9 and checkWhoWon(field) != True): # Sets the tie if there is no winner after turn 9 
+        print(""" 
+                   ~~ This is a tie! ~~ 
+            _____  _  ____     _____  ____  ____     _____  ____  _____         
+           /__ __\/ \/   _\   /__ __\/  _ \/   _\   /__ __\/  _ \/  __/ 
+             / \  | ||  / _____ / \  | / \||  / _____ / \  | / \||  \ 
+             | |  | ||  \_\____\| |  | |-|||  \_\____\| |  | \_/||  /_   
+             \_/  \_/\____/     \_/  \_/ \|\____/     \_/  \____/\____\ 
+
+        """ ) 
+        break
+
