@@ -1,3 +1,15 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+
+print(""" 
+Welcome HUMBLE USER , WE HOPE YOU WILL ENJOY THE ...!
+""")
+print(""" 
+     _____  _  ____     _____  ____  ____     _____  ____  _____         
+    /__ __\/ \/   _\   /__ __\/  _ \/   _\   /__ __\/  _ \/  __/ 
+      / \  | ||  / _____ / \  | / \||  / _____ / \  | / \||  \ 
+      | |  | ||  \_\____\| |  | |-|||  \_\____\| |  | \_/||  /_   
+      \_/  \_/\____/     \_/  \_/ \|\____/     \_/  \____/\____\ 
+
+
+""")
+
