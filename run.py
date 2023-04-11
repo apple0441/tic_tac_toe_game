@@ -55,3 +55,60 @@ def inputInArray(num, turn):
     field[2][1] = turn
   elif (num == 8):
     field[2][2] = turn
+
+
+def checkWhoWon(field):
+  # A function that indentifies the winner of the game Includes X Axis Y Axis and Horizontal
+  
+  ### X Axis
+  if (field[0][0] == 'X' and field[0][1] == 'X' and field[0][2] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][0] == 'O' and field[0][1] == 'O' and field[0][2] == 'O'):
+    print('O has won!')
+    return True
+  elif (field[1][0] == 'X' and field[1][1] == 'X' and field[1][2] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[1][0] == 'O' and field[1][1] == 'O' and field[1][2] == 'O'):
+    print('O has won!')
+    return True
+  elif (field[2][0] == 'X' and field[2][1] == 'X' and field[2][2] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[2][0] == 'O' and field[2][1] == 'O' and field[2][2] == 'O'):
+    print('O has won!')
+    return True
+
+  ### Y Axis
+  elif (field[0][0] == 'X' and field[1][0] == 'X' and field[2][0] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][0] == 'O' and field[1][0] == 'O' and field[2][0] == 'O'):
+    print('O has won!')
+    return True
+  elif (field[0][1] == 'X' and field[1][1] == 'X' and field[2][1] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][1] == 'O' and field[1][1] == 'O' and field[2][1] == 'O'):
+    print('O has won!')
+    return True
+  elif (field[0][2] == 'X' and field[1][2] == 'X' and field[2][2] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][2] == 'O' and field[1][2] == 'O' and field[2][2] == 'O'):
+    print('O has won!')
+    return True
+  ### Cross  wins
+  elif (field[0][0] == 'X' and field[1][1] == 'X' and field[2][2] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][0] == 'O' and field[1][1] == 'O' and field[2][2] == 'O'):
+    print('O has won!')
+    return True
+  elif (field[0][2] == 'X' and field[1][1] == 'X' and field[2][0] == 'X'):
+    print('X has won!')
+    return True
+  elif (field[0][2] == 'O' and field[1][1] == 'O' and field[2][0] == 'O'):
+    print('O has won!')
+    return True
