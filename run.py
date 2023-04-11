@@ -112,3 +112,15 @@ def checkWhoWon(field):
   elif (field[0][2] == 'O' and field[1][1] == 'O' and field[2][0] == 'O'):
     print('O has won!')
     return True
+
+
+def main_function():
+  """ 
+  This is the main function that runs the game , Iterates/counts between the player turns,
+  And determines the winner or a tie.
+  """ 
+  leaveLoop = False
+  turn = 'X'
+  turnCounter = 0
+  choose = input('\n Do you wish to proceed? ... \n Or are you afrid the computer will best you! : ').lower()
+
