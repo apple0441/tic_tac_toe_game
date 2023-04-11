@@ -30,3 +30,28 @@ def displayField():
       print('', field[x][y], end=' |')
   print('\n+---+---+---+')
 
+
+def inputInArray(num, turn):
+  """ 
+  Function that identifies the field against the players choice
+  Used for both determining the winner function and running the game 
+  """
+  num -= 1
+  if (num == 0):
+    field[0][0] = turn
+  elif (num == 1):
+    field[0][1] = turn
+  elif (num == 2):
+    field[0][2] = turn
+  elif (num == 3):
+    field[1][0] = turn
+  elif (num == 4):
+    field[1][1] = turn
+  elif (num == 5):
+    field[1][2] = turn
+  elif (num == 6):
+    field[2][0] = turn
+  elif (num == 7):
+    field[2][1] = turn
+  elif (num == 8):
+    field[2][2] = turn
