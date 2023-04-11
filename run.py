@@ -124,6 +124,7 @@ def main_function():
   turnCounter = 0
   choose = input('\n Do you wish to proceed? ... \n Or are you afrid the computer will best you! : ').lower()
 
+
   if (choose == 'yes' or choose == 'yea'):
     while (leaveLoop == False):
       if (checkWhoWon(field) == True): 
@@ -151,4 +152,21 @@ def main_function():
           turnCounter += 1
         else:
           print('Invalid input number, Please try again , Numbers 1 - 9 ONLY!\nDO NOT copy already used numbers :) ')
+
+     ### Competitors / Ai turn
+      else:
+        while (True):
+          aiChoice = random.choice(numbers)
+          print('\n Computer has chosen: ', aiChoice)
+          if (aiChoice in numbers):
+            inputInArray(aiChoice, 'O')
+            numbers.remove(aiChoice)
+            turnCounter += 1
+            break 
+    
+  else:
+    print('Oh never mind , Come again if you change your mind! :) ')
+  
+  
+main_function()
 
