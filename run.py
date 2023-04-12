@@ -1,7 +1,7 @@
 import random
 
 print(""" 
-Welcome HUMBLE USER , WE HOPE YOU WILL ENJOY THE ...!
+----------Welcome HUMBLE USER , WE HOPE YOU WILL ENJOY THE ...!----------
 """)
 print(""" 
      _____  _  ____     _____  ____  ____     _____  ____  _____         
@@ -123,10 +123,9 @@ def main_function():
   leaveLoop = False
   turn = 'X'
   turnCounter = 0
-  choose = input(""" \n Do you wish to proceed? ... \n
-  Or are you afrid the computer will best you! 
-  \n    Choose yes or no : 
-  """).lower()
+  choose = input(""" \n                     Do you wish to proceed?
+  \nOr are you afrid the computer will best you!  Choose YES or NO :  """).lower()                                              
+  
 
 
   if (choose == 'yes' or choose == 'yea'):
