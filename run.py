@@ -122,7 +122,7 @@ def main_function():
   leaveLoop = False
   turn = 'X'
   turnCounter = 0
-  choose = input('\n Do you wish to proceed? ... Or are you afrid the computer will best you! chose yes or no :\n ').lower()
+  choose = input('\n Do you wish to proceed? ... Or are you afrid the computer will best you!\n  chose yes or no : ').lower()
 
 
   if (choose == 'yes' or choose == 'yea'):
