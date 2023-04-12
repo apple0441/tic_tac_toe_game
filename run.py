@@ -147,7 +147,7 @@ def main_function():
         break
 
      ### Players turn
-      elif (turnCounter % 2 == 1): # Determines cpu goes first 
+      elif (turnCounter % 2 == 1): # Determines cpu goes first , ie player 2nd
         displayField()
         try: # Makes sure player cant use alphabet letters as their choice.
           chosenNumber = int(input('\nPlease chose a number between 1 and 9 : '))
