@@ -18,6 +18,7 @@ field = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 horizontal = 3
 vertical = 3
 
+
 def displayField():
   """ 
   A function that sets the field that iterates through,
@@ -60,7 +61,7 @@ def inputInArray(num, turn):
 def checkWhoWon(field):
   # A function that indentifies the winner of the game Includes X Axis Y Axis and Horizontal
   
-  ### X Axis
+  # X Axis
   if (field[0][0] == 'X' and field[0][1] == 'X' and field[0][2] == 'X'):
     print('\n   *** X has won!')
     return True
@@ -80,7 +81,7 @@ def checkWhoWon(field):
     print('\n   *** O has won!')
     return True
 
-  ### Y Axis
+  # Y Axis
   elif (field[0][0] == 'X' and field[1][0] == 'X' and field[2][0] == 'X'):
     print('\n   *** X has won!')
     return True
@@ -99,7 +100,7 @@ def checkWhoWon(field):
   elif (field[0][2] == 'O' and field[1][2] == 'O' and field[2][2] == 'O'):
     print('\n   *** O has won!')
     return True
-  ### Cross  wins
+  # Cross  wins
   elif (field[0][0] == 'X' and field[1][1] == 'X' and field[2][2] == 'X'):
     print('\n   *** X has won!')
     return True
@@ -122,7 +123,10 @@ def main_function():
   leaveLoop = False
   turn = 'X'
   turnCounter = 0
-  choose = input('\n Do you wish to proceed? ... Or are you afrid the computer will best you!\n Choose yes or no : ').lower()
+  choose = input(""" \n Do you wish to proceed? ... \n
+  Or are you afrid the computer will best you! 
+  \n    Choose yes or no : 
+  """).lower()
 
 
   if (choose == 'yes' or choose == 'yea'):
