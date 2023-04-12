@@ -24,11 +24,11 @@ def displayField():
   Sets the boundaries and core positions of the game
   """ 
   for x in range(horizontal):
-    print('\n+---+---+---+')
-    print('|', end='')
+    print('\n          +---+---+---+')
+    print('          |', end='')
     for y in range(vertical):
       print('', field[x][y], end=' |')
-  print('\n+---+---+---+')
+  print('\n          +---+---+---+')
 
 
 def inputInArray(num, turn):
@@ -62,55 +62,55 @@ def checkWhoWon(field):
   
   ### X Axis
   if (field[0][0] == 'X' and field[0][1] == 'X' and field[0][2] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][0] == 'O' and field[0][1] == 'O' and field[0][2] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   elif (field[1][0] == 'X' and field[1][1] == 'X' and field[1][2] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[1][0] == 'O' and field[1][1] == 'O' and field[1][2] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   elif (field[2][0] == 'X' and field[2][1] == 'X' and field[2][2] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[2][0] == 'O' and field[2][1] == 'O' and field[2][2] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
 
   ### Y Axis
   elif (field[0][0] == 'X' and field[1][0] == 'X' and field[2][0] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][0] == 'O' and field[1][0] == 'O' and field[2][0] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   elif (field[0][1] == 'X' and field[1][1] == 'X' and field[2][1] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][1] == 'O' and field[1][1] == 'O' and field[2][1] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   elif (field[0][2] == 'X' and field[1][2] == 'X' and field[2][2] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][2] == 'O' and field[1][2] == 'O' and field[2][2] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   ### Cross  wins
   elif (field[0][0] == 'X' and field[1][1] == 'X' and field[2][2] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][0] == 'O' and field[1][1] == 'O' and field[2][2] == 'O'):
-    print('O has won!')
+    print('\n   *** O has won!')
     return True
   elif (field[0][2] == 'X' and field[1][1] == 'X' and field[2][0] == 'X'):
-    print('X has won!')
+    print('\n   *** X has won!')
     return True
   elif (field[0][2] == 'O' and field[1][1] == 'O' and field[2][0] == 'O'):
-    print('O has won!')
+    print('\n  *** O has won!')
     return True
 
 
@@ -128,8 +128,9 @@ def main_function():
   if (choose == 'yes' or choose == 'yea'):
     while (leaveLoop == False):
       if (checkWhoWon(field) == True): 
-        displayField()        
+        displayField()
         break
+
       elif (turnCounter == 9 and checkWhoWon(field) != True): # Sets the tie if there is no winner after turn 9 
         print(""" 
                    ~~ This is a tie! ~~ 
@@ -145,7 +146,7 @@ def main_function():
      ### Players turn
       elif (turnCounter % 2 == 1): # Determines cpu goes first 
         displayField()
-        chosenNumber = int(input('\n chose a number between 1 and 9 : '))
+        chosenNumber = int(input('\nPlease chose a number between 1 and 9 : '))
         if (chosenNumber >= 1 and chosenNumber <= 9 and chosenNumber != aiChoice): #Makes sure player can not pick the number already picked by CPU,This game me a headache but was such a simple solution
           inputInArray(chosenNumber, 'X')
           numbers.remove(chosenNumber)
@@ -162,8 +163,8 @@ def main_function():
             inputInArray(aiChoice, 'O')
             numbers.remove(aiChoice)
             turnCounter += 1
-            break 
-    
+            break
+  
   else:
     print('Oh never mind , Come again if you change your mind! :) ')
   
