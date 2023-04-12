@@ -149,13 +149,17 @@ def main_function():
      ### Players turn
       elif (turnCounter % 2 == 1): # Determines cpu goes first 
         displayField()
-        chosenNumber = int(input('\nPlease chose a number between 1 and 9 : '))
-        if (chosenNumber >= 1 and chosenNumber <= 9 and chosenNumber != aiChoice): #Makes sure player can not pick the number already picked by CPU,This game me a headache but was such a simple solution
-          inputInArray(chosenNumber, 'X')
-          numbers.remove(chosenNumber)
-          turnCounter += 1
-        else:
-          print('Invalid input number, Please try again , Numbers 1 - 9 ONLY!\n************DO NOT copy already used numbers :) ')
+        try: # Makes sure player cant use alphabet letters as their choice.
+          chosenNumber = int(input('\nPlease chose a number between 1 and 9 : '))
+          if (chosenNumber >= 1 and chosenNumber <= 9 and chosenNumber != aiChoice): #Makes sure player can not pick the number already picked by CPU,This game me a headache but was such a simple solution
+            inputInArray(chosenNumber, 'X')
+            numbers.remove(chosenNumber)
+            turnCounter += 1
+          else:
+            print('Invalid input number, Please try again , Numbers 1 - 9 ONLY!\n************DO NOT copy already used numbers :) ')
+
+        except ValueError:
+          print('That is not a number 1 - 9 :/ , Do not try that again! *<>*')
 
      ### Competitors / Ai turn
       else:
