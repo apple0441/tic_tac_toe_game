@@ -124,7 +124,7 @@ def main_function():
   turn = 'X'
   turnCounter = 0
   choose = input(""" \n                     Do you wish to proceed?
-  \nOr are you afrid the computer will best you!  Choose YES or NO :  """).lower()                                              
+  \n Or are you afrid the computer will best you!  Choose YES or NO :  """).lower()                                              
   
 
 
