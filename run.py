@@ -152,7 +152,7 @@ def main_function():
           numbers.remove(chosenNumber)
           turnCounter += 1
         else:
-          print('Invalid input number, Please try again , Numbers 1 - 9 ONLY!\nDO NOT copy already used numbers :) ')
+          print('Invalid input number, Please try again , Numbers 1 - 9 ONLY!\n************DO NOT copy already used numbers :) ')
 
      ### Competitors / Ai turn
       else:
@@ -166,7 +166,7 @@ def main_function():
             break
   
   else:
-    print('Oh never mind , Come again if you change your mind! :) ')
+    print('***** Better luck next time gamer :) ******')
   
   
 main_function()
