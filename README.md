@@ -26,7 +26,7 @@ Play and find out if you got what it takes!
 
  * If you are brave enough to challenge the mighty AI you will type yes or yea to initiate the game, However if you refuse the challenge and instead type no, The game will close. 
 
- * Rules are farily simple You are in control of " X " , Battling the fiesty AI in control of " O " , Remeber afterall this is just a basic TIC TAC TOE!, Two players (You and AI) take turns putting marks on a 3x3 board. The goal of Tic Tac Toe game is to be the first to get three same symbols in a row - horizontally, vertically or diagonally on a 3 x 3 grid. The player who first gets 3 of his/her symbols (marks) in a row - vertically, horizontally, or diagonally wins the game, and the other loses the game.
+ * Rules are farily simple You are in control of " X " , Battling the fiesty AI in control of " O " , Remember afterall this is just a basic TIC TAC TOE!, Two players (You and AI) take turns putting marks on a 3x3 board. The goal of Tic Tac Toe game is to be the first to get three same symbols in a row - horizontally, vertically or diagonally on a 3 x 3 grid. The player who first gets 3 of his/her symbols (marks) in a row - vertically, horizontally, or diagonally wins the game, and the other loses the game.
 
  You may read more about the game here : [TIC TAC TOE](https://en.wikipedia.org/wiki/Tic-tac-toe)
  
