@@ -63,19 +63,19 @@ def checkWhoWon(field):
   
   # X Axis
   if (field[0][0] == 'X' and field[0][1] == 'X' and field[0][2] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][0] == 'O' and field[0][1] == 'O' and field[0][2] == 'O'):
     print('\n   *** O has won!')
     return True
   elif (field[1][0] == 'X' and field[1][1] == 'X' and field[1][2] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[1][0] == 'O' and field[1][1] == 'O' and field[1][2] == 'O'):
     print('\n   *** O has won!')
     return True
   elif (field[2][0] == 'X' and field[2][1] == 'X' and field[2][2] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[2][0] == 'O' and field[2][1] == 'O' and field[2][2] == 'O'):
     print('\n   *** O has won!')
@@ -83,32 +83,32 @@ def checkWhoWon(field):
 
   # Y Axis
   elif (field[0][0] == 'X' and field[1][0] == 'X' and field[2][0] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][0] == 'O' and field[1][0] == 'O' and field[2][0] == 'O'):
     print('\n   *** O has won!')
     return True
   elif (field[0][1] == 'X' and field[1][1] == 'X' and field[2][1] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][1] == 'O' and field[1][1] == 'O' and field[2][1] == 'O'):
     print('\n   *** O has won!')
     return True
   elif (field[0][2] == 'X' and field[1][2] == 'X' and field[2][2] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][2] == 'O' and field[1][2] == 'O' and field[2][2] == 'O'):
     print('\n   *** O has won!')
     return True
   # Cross  wins
   elif (field[0][0] == 'X' and field[1][1] == 'X' and field[2][2] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][0] == 'O' and field[1][1] == 'O' and field[2][2] == 'O'):
     print('\n   *** O has won!')
     return True
   elif (field[0][2] == 'X' and field[1][1] == 'X' and field[2][0] == 'X'):
-    print('\n   *** X has won!')
+    print('\n   *** Well done user you won this time!')
     return True
   elif (field[0][2] == 'O' and field[1][1] == 'O' and field[2][0] == 'O'):
     print('\n  *** O has won!')
