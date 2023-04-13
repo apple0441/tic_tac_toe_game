@@ -8,7 +8,7 @@ Play and find out if you got what it takes!
 
  - To visit website [Click here...](https://tic-tac-toe1221.herokuapp.com/)
 
-[![am i responsive](images/py_responsive.JPG)](https://github.com/Karlox01/Second-project-for-Code-Institute-Javascript-/blob/main/assets/images/AmIResponsive.JPG)
+[![am i responsive](/images%20/py_responsive.JPG)](https://github.com/Karlox01/The_Great_Python_Project/blob/main/images%20/py_responsive.JPG)
 
 
 ***
@@ -17,9 +17,9 @@ Play and find out if you got what it takes!
 
 
 
- __Welcome Page__
+ __Start Page__
 
- * When the link is loaded , You are directed to the landing page, Once there to start the game you have to press the "Are you ready to start?" Button.
+ * Once the page loads , , Once there to start the game you have to press the "Are you ready to start?" Button.
 
  * This will than "Open" up the game , Displaying the question , 4 possible answers and a forward button.
 
