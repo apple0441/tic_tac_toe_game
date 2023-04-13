@@ -172,8 +172,11 @@ def main_function():
             turnCounter += 1
             break
   
-  else:
+  elif (choose == "no"):
     print('***** Better luck next time gamer :) ******')
+  else:
+    main_function()
+
   
   
 main_function()
