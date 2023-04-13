@@ -2,13 +2,13 @@
 
 Tic tac toe is a game fully designed with python, It is ran via terminal on Heroku.
 
-Users battle against the AI who will be first to complete the tic tac toe sequence.
+Users battle against the AI, To determine who will be first to complete the tic tac toe sequence.
 
 Play and find out if you got what it takes!
 
  - To visit website [Click here...](https://tic-tac-toe1221.herokuapp.com/)
 
-[![am i responsive](/images%20/py_responsive.JPG)](https://github.com/Karlox01/The_Great_Python_Project/blob/main/images%20/py_responsive.JPG)
+[![am i responsive](/images/py_responsive.JPG)](https://github.com/Karlox01/The_Great_Python_Project/blob/main/images/py_responsive.JPG)
 
 
 ***
@@ -19,27 +19,36 @@ Play and find out if you got what it takes!
 
  __Start Page__
 
- * Once the page loads , , Once there to start the game you have to press the "Are you ready to start?" Button.
+ * Once the page loads you are greeted with the below screen 
 
- * This will than "Open" up the game , Displaying the question , 4 possible answers and a forward button.
+ ![Welcome screen](/images/start.JPG)
 
- * If an answer is not selected , And the "Forward" button is pressed , The quiz will issue an alert , Reminding you a choice has to be selected!
-
- * See a question example below.
-
- ![Quiz page](assets/images/quizExample.JPG)
+ * If you are brave enough to challenge the mighty AI you will type yes or yea to begin playing, However if you refuse the challenge and type no instead , The game will close. 
 
 
+ ![Begin the game](/images/YES.JPG)
 
-__SCORE__
+ * If you choose yes the game will begin, Its important to note that this is a classic Tic Tac Toe , And the rules are very clear, The first to complete a sequence of 3 consecutive lines horizontally vertically or cross , Will be the ultimate winner! 
 
-* Your score is tracked at all times , However it is only displayed once all of the questions have been submitted, This is to keep the player engaged until the very end :).
+ You may read more about the game here : [TIC TAC TOE](https://en.wikipedia.org/wiki/Tic-tac-toe)
+
+
+
+
+__WINNER LOOSER OR A TIE?__
+
+* When designing the game, It was important to be able to determine who wins Loses or if there is a tie at the end, Each outcome will display a different message and each outcome if fully thought of in the code itself.
+
 
 
 
 __END GAME/RESULT PAGE__
 
-*  Depending on the result received at the end game , A different page will be generated if you won/lost the game , Play and find out!
+*  Depending on the result received at the end game , A different page will be generated if you won/lost the game , Play and find out! , See examples below.
+
+ ![Begin the game](/images/tie.JPG)
+ ![Begin the game](/images/USER.JPG)
+ ![Begin the game](/images/O.JPG)
 
 
  ## Appearance
