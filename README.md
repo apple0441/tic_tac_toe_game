@@ -8,7 +8,7 @@ Play and find out if you got what it takes!
  - To visit website [Click here...](https://tic-tac-toe1221.herokuapp.com/)
  
 
-[![am i responsive](/images/py_responsive.JPG)](https://github.com/Karlox01/The_Great_Python_Project/blob/main/images/py_responsive.JPG)
+[![am i responsive](/images/py_responsive.JPG)](https://github.com/robertSawlton/tic_tac_toe_game/blob/main/images/py_responsive.JPG)
 
 
 ***
